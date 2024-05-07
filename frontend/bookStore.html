@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="bookStore.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Store</h1>
+        <div class="navigation-container">
+            <button onclick="goHome()">Home</button>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search books...">
+                <button id="searchButton" onclick="searchBooks()">Search</button>
+                <div class="dropdown-container">
+                    <div id="dropdownContainer" class="dropdown-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="booksContainer"></div>
+        
+        <div id="paginationContainer">
+            <button onclick="previousPage()">Previous</button>
+            <span id="currentPage">Page 1</span>
+            <button onclick="nextPage()">Next</button>
+        </div>
+    </div>
+    
+    <script src="bookStore.js"></script>
+
+</body>
+</html>
